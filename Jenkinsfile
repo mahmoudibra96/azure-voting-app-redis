@@ -36,7 +36,7 @@ pipeline {
          }
       }
 
-      }
+      
       stage('Stop test app') {
          steps {
             pwsh(script: """
