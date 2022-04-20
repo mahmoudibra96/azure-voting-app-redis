@@ -9,8 +9,6 @@ pipeline {
                 echo BRANCH_NAME
             }
         }
-    
-       stages {
         stage('Dokcer Build') {
             steps {
                 sh(script: "docker images -a")
@@ -24,4 +22,4 @@ pipeline {
         }
     }
 }
-            
+     
