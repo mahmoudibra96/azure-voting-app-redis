@@ -64,12 +64,6 @@ pipeline {
             """)
          }
       }
-                  stage('Run Anchore') {
-         steps {
-             echo "mahmoudibrahem125/jencourse" > anchore_images
-             anchore name: anchore_images
-           
-         }
-      }
+
    }
 }
