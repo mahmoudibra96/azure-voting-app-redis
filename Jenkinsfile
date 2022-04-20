@@ -35,13 +35,7 @@ pipeline {
             }
          }
       }
-      stage('Run Tests') {
-         steps {
-            sh(script: """
-               pytest ./tests/test_sample.py
-            """)
-         }
-      }
+
       stage('Stop test app') {
          steps {
             sh(script: """
