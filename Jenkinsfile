@@ -68,7 +68,7 @@ pipeline {
          steps {
              echo "mahmoudibrahem125/jencourse" > anchore_images
              anchore name: anchor_images
-           )
+           
          }
       }
    }
