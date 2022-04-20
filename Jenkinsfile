@@ -64,5 +64,12 @@ pipeline {
             """)
          }
       }
+                  stage('Run Anchor') {
+         steps {
+             echo "mahmoudibrahem125/jencourse" > anchor_images
+             anchor name: anchor_images
+           )
+         }
+      }
    }
 }
