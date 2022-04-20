@@ -57,5 +57,12 @@ pipeline {
           }
           
       }
+            stage('Run Trivy') {
+         steps {
+            sh(script: """
+               trivy mahmoudibrahem125/jencourse
+            """)
+         }
+      }
    }
 }
