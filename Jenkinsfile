@@ -57,13 +57,26 @@ pipeline {
           }
           
       }
+
+
+     stage('Trying palallel') {
+        palallel {         
+
             stage('Run Trivy') {
          steps {
-            sh(script: """
-               trivy mahmoudibrahem125/jencourse
-            """)
+             sleep(time: 30 , unit: 'SECONDS')
+          //  sh(script: """
+           //      trivy mahmoudibrahem125/jencourse
+            // """)
          }
       }
+            stage('Echo any thing') {
+         steps {
+            echo "Hello"
+         }
+      }
+        }
+     }
 
    }
 }
