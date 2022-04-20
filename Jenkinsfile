@@ -1,11 +1,12 @@
 pipeline {
     agent any
-    
+    environment {
+     BRANCH_NAME = "${GIT_BRANCH.split("/")[1]}"
   }
     stages {
         stage('Verify branch') {
             steps {
-                echo "$GIT_BRANCH"
+                echo BRANCH_NAME
             }
         }
     }
