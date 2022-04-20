@@ -60,8 +60,7 @@ pipeline {
 
 
      stage('Trying palallel') {
-        palallel {         
-
+        parallel {         
             stage('Run Trivy') {
          steps {
              sleep(time: 30 , unit: 'SECONDS')
