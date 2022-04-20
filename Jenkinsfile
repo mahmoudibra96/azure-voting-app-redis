@@ -64,10 +64,10 @@ pipeline {
             """)
          }
       }
-                  stage('Run Anchor') {
+                  stage('Run Anchore') {
          steps {
-             echo "mahmoudibrahem125/jencourse" > anchor_images
-             anchor name: anchor_images
+             echo "mahmoudibrahem125/jencourse" > anchore_images
+             anchore name: anchor_images
            )
          }
       }
