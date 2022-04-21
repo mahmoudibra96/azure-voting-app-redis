@@ -64,6 +64,7 @@ pipeline {
             stage('Run Trivy') {
          steps {
              sleep(time: 30 , unit: 'SECONDS')
+             echo "Wake UP"
           //  sh(script: """
            //      trivy mahmoudibrahem125/jencourse
             // """)
