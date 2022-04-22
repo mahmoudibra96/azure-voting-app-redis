@@ -81,8 +81,6 @@ pipeline {
             script{
                kubernetesDeploy(configs: "azure-vote-all-in-one-redis.yaml" , kubeconfigId: "minitoken4")
             }
-               
-            )
          }
       }
 
