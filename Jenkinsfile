@@ -64,7 +64,6 @@ pipeline {
             stage('Run Trivy') {
          steps {
              sleep(time: 30 , unit: 'SECONDS')
-             echo "Wake UP"
           //  sh(script: """
            //      trivy mahmoudibrahem125/jencourse
             // """)
@@ -77,6 +76,15 @@ pipeline {
       }
         }
      }
+           stage('Deploy to local kubernetes') {
+         steps {
+            script{
+               kubernetesDeploy(configs: "azure-vote-all-in-one-redis.yaml" , kubeconfigId: "minitoken4")
+            }
+               
+            )
+         }
+      }
 
    }
 }
