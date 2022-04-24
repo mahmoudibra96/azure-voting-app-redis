@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Verify Branch') {
          steps {
-            git url: 'https://github.com/mahmoudibra96/azure-voting-app-redis.git' , branch: 'master' , credentialsId: '	githubtoken'
+            git url: 'https://github.com/mahmoudibra96/azure-voting-app-redis.git' , branch: 'master' , credentialsId: 'githubtoken'
          }
       }
       stage('Docker Build') {
