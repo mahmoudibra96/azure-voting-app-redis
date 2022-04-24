@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kubernetes-bootcamp
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: kubernetes-bootcamp
