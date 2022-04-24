@@ -81,7 +81,7 @@ pipeline {
            stage('Deploy to local kubernetes') {
         steps {
            script{
-              kubernetesDeploy(configs: "azure-vote-all-in-one-redis.yaml" , kubeconfigId: "1100ad86-dc07-4964-b3c7-5f17ce4a31d4")
+              kubernetesDeploy(configs: "azure-vote-all-in-one-redis.yaml" , kubeconfigId: "87147743-7e89-4213-9b8c-dede4ebd6c75")
            }
          }
       }
