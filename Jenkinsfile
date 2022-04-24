@@ -77,11 +77,6 @@ pipeline {
         }
      }
 
-         stage('Deploy to Azure') {
-         steps {
-               
-         }
-      }
 
            stage('Deploy to local kubernetes') {
         steps {
